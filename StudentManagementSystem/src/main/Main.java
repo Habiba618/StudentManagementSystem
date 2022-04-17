@@ -4,17 +4,15 @@
  */
 package main;
 
-/**
- *
- * @author User
- */
+import util.Menu;
+import util.MenuUtil;
+
+
 public class Main {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        // TODO code application logic here
+       Menu m = MenuUtil.showMenu();
+       MenuUtil.processMenu(m);
     }
     
 }
