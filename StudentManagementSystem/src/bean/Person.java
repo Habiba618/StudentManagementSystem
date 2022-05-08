@@ -4,8 +4,10 @@
  */
 package bean;
 
+import java.io.Serializable;
 
-public class Person {
+
+public class Person implements Serializable{
     private String name;
     private String surname;
     private int age;
@@ -41,6 +43,11 @@ public class Person {
 
     public void setAge(int age) {
         this.age = age;
+    }
+
+    @Override
+    public String toString() {
+        return "name= " + name + ", surname= " + surname + ", age= " + age ;
     }
     
     

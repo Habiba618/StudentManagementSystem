@@ -4,13 +4,14 @@
  */
 package service.menu;
 
+import service.menu.inter.MenuRegisterServiceInter;
 import service.menu.inter.MenuService;
 
 /**
  *
  * @author User
  */
-public class MenuRegisterService implements MenuService{
+public class MenuRegisterService implements MenuRegisterServiceInter{
 
     @Override
     public void process() {

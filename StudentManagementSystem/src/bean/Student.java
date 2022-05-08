@@ -27,5 +27,11 @@ public class Student extends Person {
     public void setScholarship(int scholarship) {
         this.scholarship = scholarship;
     }
+
+    @Override
+    public String toString() {
+        return "Name" + getName()+ ", Surname" + getSurname()+ ", schoolName=" + getSchoolName() + ", scholarship=" + getScholarship() + '}';
+    }
+    
   
 }
